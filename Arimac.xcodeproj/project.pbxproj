@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC41032B6C7F0A4B3DACA638 /* Pods_Arimac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A09811BE80F72F6BB700D1 /* Pods_Arimac.framework */; };
+		CEF484C828E4B3CB006FB3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484C728E4B3CB006FB3FC /* AppDelegate.swift */; };
+		CEF484CA28E4B3CB006FB3FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484C928E4B3CB006FB3FC /* SceneDelegate.swift */; };
+		CEF484CC28E4B3CB006FB3FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484CB28E4B3CB006FB3FC /* ViewController.swift */; };
+		CEF484CF28E4B3CB006FB3FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF484CD28E4B3CB006FB3FC /* Main.storyboard */; };
+		CEF484D128E4B3CC006FB3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF484D028E4B3CC006FB3FC /* Assets.xcassets */; };
+		CEF484D428E4B3CC006FB3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF484D228E4B3CC006FB3FC /* LaunchScreen.storyboard */; };
+		CEF484E528E4BD0D006FB3FC /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF484E428E4BD0D006FB3FC /* Authentication.storyboard */; };
+		CEF484E928E4C242006FB3FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484E828E4C242006FB3FC /* LoginViewController.swift */; };
+		CEF484EB28E4C24E006FB3FC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484EA28E4C24E006FB3FC /* RegisterViewController.swift */; };
+		CEF484ED28E4C262006FB3FC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484EC28E4C262006FB3FC /* LoginViewModel.swift */; };
+		CEF484EF28E4C272006FB3FC /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484EE28E4C272006FB3FC /* RegisterViewModel.swift */; };
+		CEF484F128E4C517006FB3FC /* ApplicationServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484F028E4C517006FB3FC /* ApplicationServiceProvider.swift */; };
+		CEF484F328E4C820006FB3FC /* Localizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484F228E4C820006FB3FC /* Localizator.swift */; };
+		CEF484F728E4C8A3006FB3FC /* LoadingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484F628E4C8A3006FB3FC /* LoadingDelegate.swift */; };
+		CEF484FA28E4C8E4006FB3FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484F928E4C8E4006FB3FC /* MainViewController.swift */; };
+		CEF484FC28E4C8F4006FB3FC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484FB28E4C8F4006FB3FC /* MainViewModel.swift */; };
+		CEF484FF28E4C961006FB3FC /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF484FE28E4C961006FB3FC /* NewsDetailViewModel.swift */; };
+		CEF4850128E4C977006FB3FC /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4850028E4C977006FB3FC /* NewsDetailViewController.swift */; };
+		CEF4850328E4D0EA006FB3FC /* TopNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4850228E4D0EA006FB3FC /* TopNewsCollectionViewCell.swift */; };
+		CEF4850528E4D104006FB3FC /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4850428E4D104006FB3FC /* NewsTableViewCell.swift */; };
+		CEF4850728E4D2A7006FB3FC /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4850628E4D2A7006FB3FC /* APIServices.swift */; };
+		CEF4850928E4D2CF006FB3FC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4850828E4D2CF006FB3FC /* NetworkManager.swift */; };
+		CEF4850B28E4D2EC006FB3FC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4850A28E4D2EC006FB3FC /* Config.swift */; };
+		CEF4850D28E4D306006FB3FC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4850C28E4D306006FB3FC /* Response.swift */; };
+		CEF4850F28E4DA16006FB3FC /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4850E28E4DA16006FB3FC /* NewsData.swift */; };
+		CEF4851128E4DBB5006FB3FC /* NetworkRechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4851028E4DBB5006FB3FC /* NetworkRechability.swift */; };
+		CEF4851328E4E46C006FB3FC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4851228E4E46C006FB3FC /* Extension.swift */; };
+		CEF4851528E50069006FB3FC /* TopNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4851428E50069006FB3FC /* TopNews.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69A09811BE80F72F6BB700D1 /* Pods_Arimac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arimac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950BF65FCC6B190887517797 /* Pods-Arimac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arimac.release.xcconfig"; path = "Target Support Files/Pods-Arimac/Pods-Arimac.release.xcconfig"; sourceTree = "<group>"; };
+		99345115EFD94F7DFB706AD1 /* Pods-Arimac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arimac.debug.xcconfig"; path = "Target Support Files/Pods-Arimac/Pods-Arimac.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF484C428E4B3CB006FB3FC /* Arimac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arimac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF484C728E4B3CB006FB3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEF484C928E4B3CB006FB3FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEF484CB28E4B3CB006FB3FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEF484CE28E4B3CB006FB3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEF484D028E4B3CC006FB3FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF484D328E4B3CC006FB3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF484D528E4B3CC006FB3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF484E428E4BD0D006FB3FC /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		CEF484E828E4C242006FB3FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEF484EA28E4C24E006FB3FC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CEF484EC28E4C262006FB3FC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CEF484EE28E4C272006FB3FC /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		CEF484F028E4C517006FB3FC /* ApplicationServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServiceProvider.swift; sourceTree = "<group>"; };
+		CEF484F228E4C820006FB3FC /* Localizator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizator.swift; sourceTree = "<group>"; };
+		CEF484F628E4C8A3006FB3FC /* LoadingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDelegate.swift; sourceTree = "<group>"; };
+		CEF484F928E4C8E4006FB3FC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CEF484FB28E4C8F4006FB3FC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CEF484FE28E4C961006FB3FC /* NewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewModel.swift; sourceTree = "<group>"; };
+		CEF4850028E4C977006FB3FC /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		CEF4850228E4D0EA006FB3FC /* TopNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEF4850428E4D104006FB3FC /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		CEF4850628E4D2A7006FB3FC /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		CEF4850828E4D2CF006FB3FC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEF4850A28E4D2EC006FB3FC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CEF4850C28E4D306006FB3FC /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		CEF4850E28E4DA16006FB3FC /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		CEF4851028E4DBB5006FB3FC /* NetworkRechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRechability.swift; sourceTree = "<group>"; };
+		CEF4851228E4E46C006FB3FC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CEF4851428E50069006FB3FC /* TopNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNews.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF484C128E4B3CB006FB3FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC41032B6C7F0A4B3DACA638 /* Pods_Arimac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580B35B3C6A5C3D9146FD852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99345115EFD94F7DFB706AD1 /* Pods-Arimac.debug.xcconfig */,
+				950BF65FCC6B190887517797 /* Pods-Arimac.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEF484BB28E4B3CB006FB3FC = {
+			isa = PBXGroup;
+			children = (
+				CEF484C628E4B3CB006FB3FC /* Arimac */,
+				CEF484C528E4B3CB006FB3FC /* Products */,
+				580B35B3C6A5C3D9146FD852 /* Pods */,
+				E5BC2FBDC34DD8ED1BD099E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF484C528E4B3CB006FB3FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484C428E4B3CB006FB3FC /* Arimac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF484C628E4B3CB006FB3FC /* Arimac */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484DB28E4BB75006FB3FC /* App */,
+				CEF484DC28E4BB80006FB3FC /* Scenes */,
+				CEF484DD28E4BBA0006FB3FC /* API */,
+				CEF484DE28E4BBA9006FB3FC /* Network */,
+				CEF484DF28E4BBB0006FB3FC /* Model */,
+				CEF484E028E4BBB8006FB3FC /* Protocols */,
+				CEF484E128E4BBC0006FB3FC /* Utilities */,
+				CEF484CB28E4B3CB006FB3FC /* ViewController.swift */,
+				CEF484D028E4B3CC006FB3FC /* Assets.xcassets */,
+				CEF484D228E4B3CC006FB3FC /* LaunchScreen.storyboard */,
+				CEF484D528E4B3CC006FB3FC /* Info.plist */,
+			);
+			path = Arimac;
+			sourceTree = "<group>";
+		};
+		CEF484DB28E4BB75006FB3FC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484C728E4B3CB006FB3FC /* AppDelegate.swift */,
+				CEF484C928E4B3CB006FB3FC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEF484DC28E4BB80006FB3FC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484E228E4BBFF006FB3FC /* Authentication */,
+				CEF484E328E4BC0B006FB3FC /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CEF484DD28E4BBA0006FB3FC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4850628E4D2A7006FB3FC /* APIServices.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CEF484DE28E4BBA9006FB3FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4850828E4D2CF006FB3FC /* NetworkManager.swift */,
+				CEF4850A28E4D2EC006FB3FC /* Config.swift */,
+				CEF4850C28E4D306006FB3FC /* Response.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CEF484DF28E4BBB0006FB3FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4850E28E4DA16006FB3FC /* NewsData.swift */,
+				CEF4851428E50069006FB3FC /* TopNews.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEF484E028E4BBB8006FB3FC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484F628E4C8A3006FB3FC /* LoadingDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CEF484E128E4BBC0006FB3FC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484F028E4C517006FB3FC /* ApplicationServiceProvider.swift */,
+				CEF484F228E4C820006FB3FC /* Localizator.swift */,
+				CEF4851028E4DBB5006FB3FC /* NetworkRechability.swift */,
+				CEF4851228E4E46C006FB3FC /* Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CEF484E228E4BBFF006FB3FC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484E628E4C212006FB3FC /* Login */,
+				CEF484E728E4C21B006FB3FC /* Register */,
+				CEF484E428E4BD0D006FB3FC /* Authentication.storyboard */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CEF484E328E4BC0B006FB3FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484F828E4C8CF006FB3FC /* Main */,
+				CEF484FD28E4C924006FB3FC /* NewsDetail */,
+				CEF484CD28E4B3CB006FB3FC /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEF484E628E4C212006FB3FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484E828E4C242006FB3FC /* LoginViewController.swift */,
+				CEF484EC28E4C262006FB3FC /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CEF484E728E4C21B006FB3FC /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484EA28E4C24E006FB3FC /* RegisterViewController.swift */,
+				CEF484EE28E4C272006FB3FC /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		CEF484F828E4C8CF006FB3FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEF484F928E4C8E4006FB3FC /* MainViewController.swift */,
+				CEF484FB28E4C8F4006FB3FC /* MainViewModel.swift */,
+				CEF4850228E4D0EA006FB3FC /* TopNewsCollectionViewCell.swift */,
+				CEF4850428E4D104006FB3FC /* NewsTableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEF484FD28E4C924006FB3FC /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4850028E4C977006FB3FC /* NewsDetailViewController.swift */,
+				CEF484FE28E4C961006FB3FC /* NewsDetailViewModel.swift */,
+			);
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		E5BC2FBDC34DD8ED1BD099E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69A09811BE80F72F6BB700D1 /* Pods_Arimac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF484C328E4B3CB006FB3FC /* Arimac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF484D828E4B3CC006FB3FC /* Build configuration list for PBXNativeTarget "Arimac" */;
+			buildPhases = (
+				21403724F3C838C701EDF006 /* [CP] Check Pods Manifest.lock */,
+				CEF484C028E4B3CB006FB3FC /* Sources */,
+				CEF484C128E4B3CB006FB3FC /* Frameworks */,
+				CEF484C228E4B3CB006FB3FC /* Resources */,
+				769943FE0552489A63296AE9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Arimac;
+			productName = Arimac;
+			productReference = CEF484C428E4B3CB006FB3FC /* Arimac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF484BC28E4B3CB006FB3FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CEF484C328E4B3CB006FB3FC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CEF484BF28E4B3CB006FB3FC /* Build configuration list for PBXProject "Arimac" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEF484BB28E4B3CB006FB3FC;
+			productRefGroup = CEF484C528E4B3CB006FB3FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF484C328E4B3CB006FB3FC /* Arimac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF484C228E4B3CB006FB3FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF484E528E4BD0D006FB3FC /* Authentication.storyboard in Resources */,
+				CEF484D428E4B3CC006FB3FC /* LaunchScreen.storyboard in Resources */,
+				CEF484D128E4B3CC006FB3FC /* Assets.xcassets in Resources */,
+				CEF484CF28E4B3CB006FB3FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21403724F3C838C701EDF006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arimac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		769943FE0552489A63296AE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arimac/Pods-Arimac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arimac/Pods-Arimac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arimac/Pods-Arimac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF484C028E4B3CB006FB3FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4851328E4E46C006FB3FC /* Extension.swift in Sources */,
+				CEF4850928E4D2CF006FB3FC /* NetworkManager.swift in Sources */,
+				CEF484E928E4C242006FB3FC /* LoginViewController.swift in Sources */,
+				CEF484FA28E4C8E4006FB3FC /* MainViewController.swift in Sources */,
+				CEF4851128E4DBB5006FB3FC /* NetworkRechability.swift in Sources */,
+				CEF4850528E4D104006FB3FC /* NewsTableViewCell.swift in Sources */,
+				CEF4850D28E4D306006FB3FC /* Response.swift in Sources */,
+				CEF4850B28E4D2EC006FB3FC /* Config.swift in Sources */,
+				CEF4851528E50069006FB3FC /* TopNews.swift in Sources */,
+				CEF484EB28E4C24E006FB3FC /* RegisterViewController.swift in Sources */,
+				CEF484EF28E4C272006FB3FC /* RegisterViewModel.swift in Sources */,
+				CEF484ED28E4C262006FB3FC /* LoginViewModel.swift in Sources */,
+				CEF4850328E4D0EA006FB3FC /* TopNewsCollectionViewCell.swift in Sources */,
+				CEF484CC28E4B3CB006FB3FC /* ViewController.swift in Sources */,
+				CEF484C828E4B3CB006FB3FC /* AppDelegate.swift in Sources */,
+				CEF484F128E4C517006FB3FC /* ApplicationServiceProvider.swift in Sources */,
+				CEF484CA28E4B3CB006FB3FC /* SceneDelegate.swift in Sources */,
+				CEF4850728E4D2A7006FB3FC /* APIServices.swift in Sources */,
+				CEF484F728E4C8A3006FB3FC /* LoadingDelegate.swift in Sources */,
+				CEF4850128E4C977006FB3FC /* NewsDetailViewController.swift in Sources */,
+				CEF484F328E4C820006FB3FC /* Localizator.swift in Sources */,
+				CEF484FF28E4C961006FB3FC /* NewsDetailViewModel.swift in Sources */,
+				CEF484FC28E4C8F4006FB3FC /* MainViewModel.swift in Sources */,
+				CEF4850F28E4DA16006FB3FC /* NewsData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF484CD28E4B3CB006FB3FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF484CE28E4B3CB006FB3FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEF484D228E4B3CC006FB3FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF484D328E4B3CC006FB3FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF484D628E4B3CC006FB3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEF484D728E4B3CC006FB3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF484D928E4B3CC006FB3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99345115EFD94F7DFB706AD1 /* Pods-Arimac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PAWUB24V3D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Arimac/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gautham.Arimac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF484DA28E4B3CC006FB3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 950BF65FCC6B190887517797 /* Pods-Arimac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PAWUB24V3D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Arimac/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gautham.Arimac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF484BF28E4B3CB006FB3FC /* Build configuration list for PBXProject "Arimac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF484D628E4B3CC006FB3FC /* Debug */,
+				CEF484D728E4B3CC006FB3FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF484D828E4B3CC006FB3FC /* Build configuration list for PBXNativeTarget "Arimac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF484D928E4B3CC006FB3FC /* Debug */,
+				CEF484DA28E4B3CC006FB3FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF484BC28E4B3CB006FB3FC /* Project object */;
+}
